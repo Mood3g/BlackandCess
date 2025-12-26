@@ -1,0 +1,20 @@
+.menuTab{
+    font-size: 100px;
+    font-weight: 900;
+}
+img{
+    height: 500px;
+}
+.prod{
+    height: 200px;
+    width: 200px;
+}
+#footerMenu li{
+    list-style-type: none;
+}
+#footerMenu li a{
+   text-decoration: none;
+   color: white;
+   font-size: 17px;
+   margin-left: -10px;
+}
