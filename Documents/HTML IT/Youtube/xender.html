@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xender page</title>
+    <style>
+      
+
+        nav{
+          left: 0;
+          width: 70px;
+          top: 0;
+          position: fixed;
+          background-color: gray;  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+         
+        }
+        .home-button{
+            height: 70px;
+            
+        }
+        .home-button-icon{
+            height: 30px;
+        }
+        
+        .home-button,
+        .explore-button,
+        .youtube-music-button{
+            position: relative;
+        }
+        .tooltip{
+            position: absolute;
+            background-color: palevioletred;
+            color: white;
+            right: -100px;
+            top: 0;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 1s;
+            pointer-events: none;
+            white-space: nowrap;
+
+        }
+        .home-button:hover .tooltip,
+        .explore-button:hover .tooltip,
+        .youtube-music-button:hover .tooltip{
+            opacity: 1;
+        }
+        .explore-button{
+            height: 70px;
+        }
+        .explore-button-icon{
+            height: 30px;
+        }
+
+        .youtube-music-button{
+            height: 70px;
+        }
+        .youtube-music-button-icon{
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="home-button">
+            <img src="icons/home.svg" alt="" class="home-button-icon">
+            <div class="tooltip">Home</div>
+        </div>
+        <div class="explore-button">
+            <img src="icons/explore.svg" alt="" class="explore-button-icon">
+            <div class="tooltip">Explore</div>
+        </div>
+        <div class="youtube-music-button">
+            <img src="icons/youtube-music.svg" alt="" class="youtube-music-button-icon">
+            <div class="tooltip">Youtube Music</div>
+        </div>
+    </nav>
+</body>
+</html>
